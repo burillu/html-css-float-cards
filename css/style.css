@@ -1,3 +1,63 @@
+/* colors 
+header.title: #E43170;
+.email: #2ABFF5;
+*/
+
+/* general */
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+:root{
+    --color-header:#E43170;
+    --color-mail:#2ABFF5;
+    --color-cards:black;
+    --color-data:white;
+}
+
 body{
-    background-color: red;
+    font-size: 18px;
+}
+/* utility */
+
+.wrapper{
+    max-width: 1200px;
+    margin:0 auto;
+}
+.clearfix::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+push-left{
+    float:left;
+}
+.align-center{
+    text-align: center;
+}
+.debug{
+    border: 2px solid black;
+    min-height: 200px;
+}
+/* variables */
+
+.title{
+    color:var(--color-header);
+    padding: 20px;
+}
+.mail{
+    color: var(--color-mail);
+}
+.background-cards{
+    background-color: var(--color-cards);
+}
+
+/* others */
+.data{
+    color: var(--color-data);
+}
+.content{
+    width: calc(100% / 3);
+    padding:10px;
 }
