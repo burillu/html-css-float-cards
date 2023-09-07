@@ -31,7 +31,7 @@ body{
     display: table;
     clear: both;
 }
-push-left{
+.push-left{
     float:left;
 }
 .align-center{
@@ -39,7 +39,7 @@ push-left{
 }
 .debug{
     border: 2px solid black;
-    min-height: 200px;
+    min-height: 100px;
 }
 /* variables */
 
@@ -49,16 +49,32 @@ push-left{
 }
 .mail{
     color: var(--color-mail);
+    padding: 5px;
 }
 .background-cards{
     background-color: var(--color-cards);
 }
 
 /* others */
+/* p div.content{
+    padding: 10px;
+} */
 .data{
     color: var(--color-data);
+    padding: 5px;
 }
 .content{
     width: calc(100% / 3);
-    padding:10px;
+    padding:25px;
 }
+.img-sizing{
+    max-width: 100px;
+    object-fit: contain;
+    /* object-position: */
+}
+.sector-name{
+    display: inline-block;
+}
+/* .sector-name{
+
+} */
