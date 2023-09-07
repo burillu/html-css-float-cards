@@ -34,6 +34,11 @@ body{
 .push-left{
     float:left;
 }
+@media only screen and (max-width: 768px) {
+    .resp-block{
+        float: none;
+    }
+}
 .align-center{
     text-align: center;
     padding: 25px;
@@ -54,7 +59,8 @@ body{
 }
 .background-cards{
     background-color: var(--color-cards);
-    box-shadow: 0 0 5px gray;
+     box-shadow: 0 0 5px gray;
+    display: flex;
 }
 
 /* others */
@@ -66,12 +72,12 @@ body{
     padding: 5px;
 }
 .content{
-    width: calc(100% / 3);
+    min-width: calc(100% / 3);
     padding:25px;
 }
 .img-sizing{
     max-width: 100px;
-    object-fit: contain;
+    object-fit: cover;
     /* object-position: */
 }
 .sector-name{
