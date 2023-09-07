@@ -17,7 +17,7 @@ header.title: #E43170;
 }
 
 body{
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Fredoka', sans-serif;
 }
 /* utility */
@@ -36,16 +36,17 @@ body{
 }
 .align-center{
     text-align: center;
+    padding: 25px;
 }
-.debug{
+/* .debug{
     border: 2px solid black;
     min-height: 100px;
-}
+} */
 /* variables */
 
 .title{
     color:var(--color-header);
-    padding: 20px;
+    font-size: 23px;
 }
 .mail{
     color: var(--color-mail);
@@ -53,6 +54,7 @@ body{
 }
 .background-cards{
     background-color: var(--color-cards);
+    box-shadow: 0 0 5px gray;
 }
 
 /* others */
